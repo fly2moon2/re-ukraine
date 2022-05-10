@@ -1,3 +1,7 @@
+//redux toolkit way...
+// .. see store/index.js
+
+// redux core way...
 import { uniqueId } from '../actions';
 
 const mockTasks = [

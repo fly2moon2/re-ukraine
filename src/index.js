@@ -8,7 +8,8 @@ import tasks from './reducers';
 import App from './App';
 import './index.css';
 
-const store = createStore(tasks);
+//const store = createStore(tasks);
+import store from "./store/index";
 
 ReactDOM.render(
   <Provider store={store}>
