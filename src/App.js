@@ -8,44 +8,20 @@ import { createTask, editTask } from './actions';
 
 // redux toolkit example component
 import Counter from "./components/Counter";
+import Tag from "./components/Tag";
 
-class App extends Component {
-  onCreateTask = ({ title, description }) => {
-    this.props.dispatch(createTask({ title, description }));
-  };
+function App() {
 
-  onStatusChange = (id, status) => {
-    this.props.dispatch(editTask(id, { status }));
-  };
 
-  /*const dispatch = useDispatch();
-  const isAuth = useSelector((state) => state.auth.isAuthenticated);
-
-  const logoutHandler = () => {
-    dispatch(authActions.logout());
-  };*/
-
-  render() {
-    return (
-      <div className="main-content">
-        <TasksPage
-          tasks={this.props.tasks}
-          onCreateTask={this.onCreateTask}
-          onStatusChange={this.onStatusChange}
-        />
-        <Counter />
-      </div>
-    );
-  }
+  return (
+    <>
+      <Counter />
+{/*       <Tag /> */}
+    </>
+  );
 }
 
-function mapStateToProps(state) {
-  return {
-    tasks: state.tasks,
-  };
-}
-
-export default connect(mapStateToProps)(App);
+export default App;
 
 // working redux in action example
 /*
