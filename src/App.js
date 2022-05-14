@@ -10,13 +10,34 @@ import { createTask, editTask } from './actions';
 import Counter from "./components/Counter";
 import Tag from "./components/Tag";
 
+// redux toolkit way...
+// ref.: https://redux.js.org/tutorials/fundamentals/part-8-modern-redux
+// https://codesandbox.io/s/github/reduxjs/redux-fundamentals-example-app/tree/checkpoint-9-createSlice/?from-embed=&file=/src/features/todos/TodoListItem.js:0-1802
+import TodoList from './features/todos/TodoList'
+
 function App() {
 
 
   return (
     <>
-      <Counter />
-{/*       <Tag /> */}
+       <div className="App">
+      <nav>
+        <section>
+          <h1>Redux Fundamentals Example</h1>
+        </section>
+      </nav>
+      <main>
+        <section className="medium-container">
+          <h2>Todos</h2>
+          <div className="todoapp">
+          <TodoList />
+          <Counter />
+          <Tag /> 
+          </div>
+        </section>
+      </main>
+    </div>
+
     </>
   );
 }

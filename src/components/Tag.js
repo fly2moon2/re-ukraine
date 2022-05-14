@@ -28,23 +28,6 @@ const Tag = () => {
   return (
     <>
     {show &&<div>{tag}</div>}
- {/*        <div className="task">
-      <div className="task-header">
-        <div>{props.task.title}</div>
-        <select value={props.task.status} onChange={onStatusChange}>
-          {TASK_STATUSES.map(status => (
-            <option key={status} value={status}>{status}</option>
-          ))}
-        </select>
-      </div>
-      <hr />
-      <div className="task-body">{props.task.description}</div>
-    </div>
-      {show && <div>{counter}</div>}
-      <button onClick={incrementHandler}>Increment</button>
-      <button onClick={increaseHandler}>Increase by 10</button>
-      <button onClick={decrementHandler}>Decrement</button>
-      <button onClick={toggleCounterHandler}>Toggle Counter</button> */}
     </>
   );
 
