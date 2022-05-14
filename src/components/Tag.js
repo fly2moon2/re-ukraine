@@ -1,5 +1,5 @@
 // redux toolkit way...
-
+import React, { Component }  from 'react';
 import { useSelector, useDispatch } from "react-redux";
 
 import { tagActions } from "../store/tag";

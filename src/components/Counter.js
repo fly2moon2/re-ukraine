@@ -2,6 +2,7 @@
 // ref.:https://ithelp.ithome.com.tw/articles/10275697
 
 // Counter.js
+import React, { Component }  from 'react';
 import { useSelector, useDispatch } from "react-redux";
 
 //import { counterActions } from "./store/index";
