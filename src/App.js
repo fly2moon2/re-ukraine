@@ -13,7 +13,9 @@ import Tag from "./components/Tag";
 // redux toolkit way...
 // ref.: https://redux.js.org/tutorials/fundamentals/part-8-modern-redux
 // https://codesandbox.io/s/github/reduxjs/redux-fundamentals-example-app/tree/checkpoint-9-createSlice/?from-embed=&file=/src/features/todos/TodoListItem.js:0-1802
+import Header from './features/header/Header'
 import TodoList from './features/todos/TodoList'
+import Footer from './features/footer/Footer'
 
 function App() {
 
@@ -30,7 +32,9 @@ function App() {
         <section className="medium-container">
           <h2>Todos</h2>
           <div className="todoapp">
+          <Header />
           <TodoList />
+          <Footer />
           <Counter />
           <Tag /> 
           </div>

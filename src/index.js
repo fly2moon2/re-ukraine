@@ -11,10 +11,14 @@ import './index.css';
 //const store = createStore(tasks);
 import store from "./store/index";
 
+import './api/server'
+
 ReactDOM.render(
+  <React.StrictMode>
   <Provider store={store}>
     <App />
   </Provider>,
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
