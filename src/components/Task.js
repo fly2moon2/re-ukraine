@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 
 import { TASK_STATUSES } from '../constants';
 
@@ -23,4 +23,5 @@ const Task = props => {
   }
 };
 
-export default Task;
+export default _Task;
+ */

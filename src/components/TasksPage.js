@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import TaskList from './TaskList';
+/* import React, { Component } from 'react';
+import _TaskList from './TaskList';
 
 import { TASK_STATUSES } from '../constants';
 
@@ -97,3 +97,4 @@ class TasksPage extends Component {
 }
 
 export default TasksPage;
+ */
